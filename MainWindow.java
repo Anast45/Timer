@@ -1,3 +1,6 @@
+//Anastasios Dachis @2020// 
+//////////////////////////
+/////////////////////////
 package MainWindow;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -14,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class MainWindow extends JFrame implements ActionListener{
+		//Label
 		//JLabel userN = new JLabel("username :");
 		JLabel timeL = new JLabel("Δώσε ώρα που θα ήθελες να απενεργοποιηθεί ο υπολογιστής");
 		JLabel timeHL = new JLabel("Ώρα");
@@ -35,16 +39,18 @@ public class MainWindow extends JFrame implements ActionListener{
 		FlowLayout flow =new FlowLayout(FlowLayout.LEFT);
 		
 	public MainWindow(){
-		
+		//Προσθήκη ActionListener και Χρωμάτων//
 		cb.addActionListener(this);
 		cb.setBackground(Color.ORANGE);
+		
 		confirm.addActionListener(this);
 		confirm.setBackground(Color.ORANGE);
+
 		exit.addActionListener(this);
 		exit.setBackground(Color.ORANGE);
 		
+		//Βάζοντας τα στοιχεία στο κύριο στοιχείο
 		obj.setBackground(Color.LIGHT_GRAY);
-		//obj.setForeground(Color.LIGHT_GRAY);
 		obj.add(timeL);
 		obj.add(Box.createHorizontalStrut(1000000));
 		obj.add(timeHL);
